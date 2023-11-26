@@ -1,4 +1,4 @@
-# Monochular Depth Estimation
+# Monocular Depth Estimation
 
 ## Required Libraries:
 PyTorch, numpy, matplotlib
