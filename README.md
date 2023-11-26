@@ -1,10 +1,46 @@
-# MonochularDepthEstimation
+## MonochularDepthEstimation
 
-Required Libraries:
-PyTorch, numpy
+# Required Libraries:
+PyTorch, numpy, matplotlib
 
-To Visualize the model output or train new model, run main.py and provide input accordingly ('train' to train the model and 'test' to visualize model output)
+Run main.py 
+It will ask for user input with below output
 
-```
-python train.py
-```
+Want to train new model or check model output?
+To Train new model write 'train', To check model output write 'test':
+
+Provide input accordingly
+
+
+# Training and Validation Loss curve over the epoches shown below:
+
+<p align="center">
+  <img src="https://github.com/udayanghosh1996/MonocularDepthEstimation/blob/master/Results/Loss_curve.png" alt="Training and Validation Loss">
+</p>
+
+
+# Few side by side "Input Image", "Actual Depth Map" and "Depth map from model" shown below:
+
+
+
+<p align="center">
+  <img src="https://github.com/udayanghosh1996/MonocularDepthEstimation/blob/master/Results/Result_1.png" alt="Result-1">
+</p>
+
+<p align="center">
+  <img src="https://github.com/udayanghosh1996/MonocularDepthEstimation/blob/master/Results/Result_2.png" alt="Result-2">
+</p>
+
+<p align="center">
+  <img src="https://github.com/udayanghosh1996/MonocularDepthEstimation/blob/master/Results/Result_3.png" alt="Result-3">
+</p>
+
+<p align="center">
+  <img src="https://github.com/udayanghosh1996/MonocularDepthEstimation/blob/master/Results/Result_4.png" alt="Result-4">
+</p>
+
+<p align="center">
+  <img src="https://github.com/udayanghosh1996/MonocularDepthEstimation/blob/master/Results/Result_5.png" alt="Result-5">
+</p>
+
+
