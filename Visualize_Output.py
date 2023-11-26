@@ -3,18 +3,23 @@ from torchvision import transforms
 from DataLoader import NYUDataset
 import random
 from Model import *
+import torch
+
 
 
 def visualize_depth_prediction(model, input_image, depth_map):
     model.eval()
+    ip_img = input_image
 
-    input_image = input_image.clamp(0, 255).to(torch.uint8)
+    # input_image = input_image.clamp(0, 255).to(torch.uint8)
+    # input_image = input_image.to(torch.uint8)
 
     input_image = input_image.unsqueeze(0).cpu().float()
     depth_map = depth_map.squeeze().cpu().float().numpy()
 
     with torch.no_grad():
         try:
+            # print(input_image.shape)
             output_depth = model(input_image)
         except Exception as e:
             print(f"Error during forward pass: {e}")
@@ -25,7 +30,8 @@ def visualize_depth_prediction(model, input_image, depth_map):
     plt.figure(figsize=(12, 4))
 
     plt.subplot(1, 3, 1)
-    plt.imshow(input_image.squeeze(0).permute(1, 2, 0).numpy())
+    # plt.imshow(input_image.squeeze(0).permute(1, 2, 0).numpy())
+    plt.imshow(ip_img.numpy().transpose((1, 2, 0)))
     plt.title('Original Image')
     plt.axis('off')
 
@@ -56,3 +62,5 @@ def Visualize_Depth():
     model.load_state_dict(torch.load(path))
     model.eval()
     visualize_depth_prediction(model, val_input_images[0], val_depth_maps[0])
+
+
