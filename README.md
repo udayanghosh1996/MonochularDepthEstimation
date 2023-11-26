@@ -1,6 +1,6 @@
-## MonochularDepthEstimation
+# MonochularDepthEstimation
 
-# Required Libraries:
+## Required Libraries:
 PyTorch, numpy, matplotlib
 
 Run main.py 
@@ -12,14 +12,14 @@ To Train new model write 'train', To check model output write 'test':
 Provide input accordingly
 
 
-# Training and Validation Loss curve over the epoches shown below:
+## Training and Validation Loss curve over the epoches shown below:
 
 <p align="center">
   <img src="https://github.com/udayanghosh1996/MonocularDepthEstimation/blob/master/Results/Loss_curve.png" alt="Training and Validation Loss">
 </p>
 
 
-# Few side by side "Input Image", "Actual Depth Map" and "Depth map from model" shown below:
+## Few side by side "Input Image", "Actual Depth Map" and "Depth map from model" shown below:
 
 
 
