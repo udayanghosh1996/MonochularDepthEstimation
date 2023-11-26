@@ -3,6 +3,7 @@
 ## Required Libraries:
 PyTorch, numpy, matplotlib
 
+## Code Running Instructions
 Run main.py 
 It will ask for user input with below output
 
